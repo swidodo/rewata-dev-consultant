@@ -35,7 +35,7 @@
                         <div class="col-lg-3 col-md-4 d-flex align-items-stretch mt-3 bottom-section">
                             <div class="course-item shadow-sm">
                                 <div class="" style="height: 200px;">
-                                    <img src="{{asset('storage/layanan/perusahaan/'.$basename)}}" class="img-fluid" alt="image-layanan">
+                                    <img src="{{asset('uploads/layanan/perusahaan/'.$basename)}}" class="img-fluid" alt="image-layanan">
                                 </div>
                                 <div class="course-content">
                                     <h3><a href="#">{!! $comp->title !!}</a></h3>
@@ -64,7 +64,7 @@
                         @foreach ($poin_sdm as $poin)
                             <div class="col-md-3">
                                 <div class="text-center w-25 d-flex align-items-center" >
-                                    <img class="img-fluid float-center" src="{{asset('storage/logo-sdm/'.basename($poin->image))}}" alt="{!! $poin->judul !!}" style="min-height: 70px; max-height :70px;">
+                                    <img class="img-fluid float-center" src="{{asset('uploads/logo-sdm/'.basename($poin->image))}}" alt="{!! $poin->judul !!}" style="min-height: 70px; max-height :70px;">
                                 </div>
                                 <div class="mt-1">{!! $poin->judul !!}</div>
                                 <div>
@@ -115,7 +115,7 @@
                             @foreach ($kelas as $kls)
                                 <div class="item my-1 mx-2">
                                     <div class="course-item shadow-sm">
-                                        <img src="{{asset('storage/kelas/'.basename($kls->image))}}" class="img-fluid" alt="kelas-rewata">
+                                        <img src="{{asset('uploads/kelas/'.basename($kls->image))}}" class="img-fluid" alt="kelas-rewata">
                                         <div class="course-content">
                                             <a href="{{$kls->resource}}">{!! $kls->title !!}</a></h3>
                                             {!! $kls->short_description !!}
@@ -186,7 +186,7 @@
                        <div class="col-lg-3 col-md-4 d-flex align-items-stretch mt-3 bottom-section mb-3">
                             <div class="course-item shadow-sm mb-3">
                                 <div class="">
-                                    <img src="{{asset('storage/layanan/personal/'.basename($person->image))}}" class="img-fluid" alt="image-layanan">
+                                    <img src="{{asset('uploads/layanan/personal/'.basename($person->image))}}" class="img-fluid" alt="image-layanan">
                                 </div>
                                 <div class="course-content">
                                     <h3><a href="#">{!! $person->title !!}</a></h3>
