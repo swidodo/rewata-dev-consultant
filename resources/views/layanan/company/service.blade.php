@@ -39,7 +39,7 @@
                             $no = 1;
                         @endphp
                         @foreach ($service as $ly)
-                        <tr id="{{$ly->id}}">
+                            <tr id="{{$ly->id}}">
                             <td class="text-center">{{ $no }}</td>
                             <td>{!! $ly->title !!}</td>
                             <td>{!! $ly->body !!}</td>

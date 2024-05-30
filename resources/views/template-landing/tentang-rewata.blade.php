@@ -33,14 +33,18 @@
                 <div class="row">
                     @foreach ($profile as $prof)
                     <div class="col-md-6">
-                        {!! $prof->name !!}
-                        {!! $prof->specialis !!}
-                        <h4>{{'EDUCATION'}}</h4>
-                        {!! $prof->education !!}
-                        <h5>{{ 'SKILLS' }}</h5>
-                        {!! $prof->skill !!}
-                        <h5> {{ 'EXPERIENCE' }}</h5>
-                        {!! $prof->experience !!}
+                        <div class="card">
+                            <div class="card-body shadow-lg border border-primary">
+                                {!! $prof->name !!}
+                                {!! $prof->specialis !!}
+                                <h5>{{'EDUCATION'}}</h5>
+                                {!! $prof->education !!}
+                                <h5>{{ 'SKILLS' }}</h5>
+                                {!! $prof->skill !!}
+                                <h5> {{ 'EXPERIENCE' }}</h5>
+                                {!! $prof->experience !!}
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-6" style="background: url('../img/logo/cover_zero_page.jpg') top center">
                         <img src="{{asset('storage/profile/'.basename($prof->image))}}" class="img-fluid">

@@ -28,7 +28,7 @@ class BlogArtikelController extends Controller
         
         $fileName = time() . $request->file('image')->getClientOriginalName();
         $store = $request->file('image')->storeAs('public/'.$path, $fileName);
-        $pathFile_application = 'uploads/'.$path . $fileName ?? null;
+        $pathFile_application = 'public/storage/'.$path . $fileName ?? null;
         $base = URL::to('/');
         $image = $base.'/'.$pathFile_application;
         try {
@@ -60,7 +60,7 @@ class BlogArtikelController extends Controller
             }
             $fileName = time() . $request->file('image')->getClientOriginalName();
             $store = $request->file('image')->storeAs('public/'.$path, $fileName);
-            $pathFile_application = 'uploads/'.$path . $fileName ?? null;
+            $pathFile_application = 'public/storage/'.$path . $fileName ?? null;
             $base = URL::to('/');
             $image = $base.'/'.$pathFile_application;
         }else{

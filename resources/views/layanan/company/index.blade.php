@@ -52,7 +52,7 @@
                             <td>{!! $ly->body !!}</td>
                             <td width="150">
                                 <a href="{{$ly->image}}" target="_blank">
-                                    <img src="{{asset('storage/layanan/perusahaan/'.$basename)}}" class="img-fluid">
+                                    <img src="{{asset('public/storage/layanan/perusahaan/'.$basename)}}" class="img-fluid">
                                 </a>
                             </td>
                             

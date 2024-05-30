@@ -232,7 +232,7 @@ h6 {
   padding: 10px 0 10px 30px;
   font-family: "Poppins", sans-serif;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: bold;
   color: #37423b;
   white-space: nowrap;
   transition: 0.3s;
@@ -249,7 +249,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #5fcf80;
+  color: #bd1a1a;
 }
 
 .navbar .dropdown ul {
@@ -286,7 +286,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #5fcf80;
+  color: #c43636;
 }
 
 .navbar .dropdown:hover>ul {
@@ -386,7 +386,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #5fcf80;
+  color: #cc2b2b;
 }
 
 .navbar-mobile .getstarted,
@@ -421,7 +421,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #5fcf80;
+  color: #c4333b;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -489,8 +489,8 @@ h6 {
 }
 
 #hero .btn-get-started:hover {
-  background: #5fcf80;
-  border: 2px solid #5fcf80;
+  background:#fff;
+  border: 2px solid #d82e2e;
 }
 
 @media (min-width: 1024px) {
@@ -621,7 +621,7 @@ section {
 }
 
 .about .content .learn-more-btn:hover {
-  background: #3ac162;
+  background: #df364c;
   color: #fff;
 }
 
@@ -786,7 +786,7 @@ section {
 }
 
 .courses .course-content h3 a:hover {
-  color: #5fcf80;
+  color: #d14343;
 }
 
 .courses .course-content p {
