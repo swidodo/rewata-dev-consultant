@@ -1,20 +1,42 @@
-
 @extends('template-landing.layouts')
 @section('page-layouts')
+<style>
+.list-group h3{
+    font-size: 10pt;
+}
+</style>
+    <section class="d-flex justify-content-center align-items-center px-5" style="background-size:cover !important;background: url({{asset('')}})">
+       <div class="container">
+            <h3 class="pt-4" style="margin-bottom: -50px !important;"><a href="/page-layanan-personal" class="btn btn-outline-danger"><i class="fa fa-arrow-left fs-lg"></i></a></h3>
+        </div>
+    </section>
     <main id="main">
-        <div class="section" style="background-color: #1F3A93">
-            <div class="container">
-                <div class="row w-100">
-                    <div class="col-md-4 fs-5 py-2 text-light"><i class="fa-solid fa-phone"></i> {{'083896009671'}}</div>
-                    <div class="col-md-4 fs-5 py-2 text-light"><i class="fa-brands fa-whatsapp fw-bold"></i> {{'083896009671'}}</div>
-                    <div class="col-md-4 fs-5 py-2 text-light"><span class="fa fa-envelope"></span> {{'budi@rewata.com'}}</div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="container">
+                        <img src="{{ $personal->image }}" class="img-fluid rounded border border-light border-1 shadow-sm">
+                        <div><strong>{!! $personal->title !!}</strong></div>
+                        <div class="pt-4">
+                            {!! $personal->body !!}
+                        </div>
+                        <div class="mb-5"><p style="font-size: 10pt;"><i class="fa fa-edit"></i> Created at : {{ date('d-m-Y H:m:s',strtotime($personal->created_at))}}</p></div>
+                    </div>
+                </div>
+                <div class="col-md-4 bg-light">
+                    <div class="container">
+                        <div class="list-group mt-4 mb-4 shadow-lg">
+                            <a type="button" class="list-group-item list-group-item-action active" aria-current="true">
+                            Relate Layanan Personal
+                            </a>
+                            @foreach ($all_personal as $all)
+                                <a type="button" class="list-group-item list-group-item-action">
+                                    <img src="{{ $all->image }}" class="rounded border border-2 shadow-sm float-start me-2" height="40">{!! $all->title !!}</a>
+                            @endforeach
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <section id="konsultasi-personal" class="courses">
-            <div class="p-section d-flex justify-content-center" data-aos="fade-up">
-               
-            </div>
-        </section>
     </main>
 @endsection()

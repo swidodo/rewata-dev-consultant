@@ -78,9 +78,7 @@ class LayananPersonalController extends Controller
                 'short_description' => $request->short_description,
                 'body'              => $request->body,
                 'image'             => $image,
-                // 'created_by' => Auth::user()->id,
-                // 'created_at' => 
-                // 'updated_at' => 
+                'updated_at' => Auth::user()->id,
             ];
             personal::where('id',$id)->update($data);
             return redirect('/layanan-personal')->with('success','Layanan Personal Berhasil Di Update.');

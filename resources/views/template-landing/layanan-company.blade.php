@@ -50,7 +50,7 @@
                                 <div class="course-content">
                                     <h3><a href="#">{!! $comp->title !!}</a></h3>
                                     {!! $comp->body !!} 
-                                    <a href=""><button class="btn btn-sm btn-outline-primary rounded-pill shadow-sm text-dark">selengkapnya</button></a>
+                                    <a href="show-layanan-perusahaan"><button class="btn btn-sm btn-outline-primary rounded-pill shadow-sm text-dark">selengkapnya</button></a>
                                 </div>
                             </div>
                         </div> 
@@ -66,18 +66,18 @@
                     
                 <div class="row">
                     @foreach ($why_utama as $utama)
-                    <div class="col-md-4">
-                       <div>{!! $utama->title !!}</div>
-                       <div>{!! $utama->body !!}</div>
-                    </div>
+                        <div class="col-md-4">
+                        <div>{!! $utama->title !!}</div>
+                        <div>{!! $utama->body !!}</div>
+                        </div>
                     @endforeach
                 </div>
                 <div class="row">
                     @foreach ($why_sub as $sub)
-                    <div class="col-md-3">
-                       <div>{!! $sub->title !!}</div>
-                       <div>{!! $sub->body !!}</div>
-                    </div>
+                        <div class="col-md-3">
+                        <div>{!! $sub->title !!}</div>
+                        <div>{!! $sub->body !!}</div>
+                        </div>
                     @endforeach
                 </div>
                 <div class="row">

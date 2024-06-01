@@ -39,6 +39,12 @@ class LandingPageController extends Controller
         $data['video']          = VideoYoutube::orderBy('id','DESC')->limit(12)->get();
         return view('template-landing.layanan-personal',$data);
     }
+    public function show_detail_personal(){
+        $data['title']     ='layanan-personal';
+        $data['personal']  = Personal::where('id',14)->first();
+        $data['all_personal']  = Personal::where('status','1')->orderBy('id','DESC')->get();
+        return view('template-landing.show-layanan-personal',$data);
+    }
     public function perusahaan(){
         $data['title']          ='layanan-personal';
         $data['company']        = Company::where('status','1')->get();
@@ -47,6 +53,12 @@ class LandingPageController extends Controller
         $data['why_sub']        = WhyMe::where('key','sub_poin')->get();
         $data['video']          = VideoYoutube::orderBy('id','DESC')->limit(12)->get();
         return view('template-landing.layanan-company',$data);
+    }
+    public function show_detail_perusahaan(){
+        $data['title']          ='layanan-perusahaan';
+        $data['company']        = Company::where('id',7)->first();
+        $data['all_company']    = Company::where('status','1')->orderBy('id','DESC')->get();
+        return view('template-landing.show-layanan-company',$data);
     }
     public function hubungi_kami(){
         $data['title']          ='Hubungi kami';

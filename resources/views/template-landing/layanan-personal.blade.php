@@ -33,7 +33,7 @@
                                 <div class="course-content">
                                     <h3><a href="#">{!! $person->title !!}</a></h3>
                                     {!! $person->short_description !!}
-                                    <a href=""><button class="btn btn-sm btn-outline-primary rounded-pill shadow-sm text-dark">selengkapnya</button></a>
+                                    <a href="show-layanan-personal"><button class="btn btn-sm btn-outline-primary rounded-pill shadow-sm text-dark">selengkapnya</button></a>
                                 </div>
                             </div>
                         </div> 

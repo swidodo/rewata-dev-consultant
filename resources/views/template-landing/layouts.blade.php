@@ -40,16 +40,15 @@
 </head>
 
 <body>
-    <div class="containerLoader" hidden>
-        <div class="preloader"></div> 
-    </div>
     <a href="https://api.whatsapp.com/send?phone=083896009671" class="floating fab-icon" target="_blank">
         <img src="https://newconnected.com/assets/img/icon/wa.png" class="img-fluid" data-bs-toggle="tooltip" data-bs-placement="top" title="Contact US" alt="Contact Us, We Will Help You">
      </a>
     @include('includes.navbar')
     @yield('page-layouts')
     @include('includes.footer')
-    
+    <div class="containerLoader" hidden>
+        <div class="preloader"></div> 
+    </div>
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center bg-danger"><i class="bi bi-arrow-up-short"></i></a>
     <script>
          $('.containerLoader').attr('hidden',false);
