@@ -34,54 +34,27 @@
  <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
     <style>
-        /* body {
-            font-family: sans-serif;
-        }
-        .p-section{
-            margin-left : 70px;
-            margin-right : 70px;
-        }
-        .floating {
-            position: fixed;
-            width: 60px;
-            height: 50x;
-            bottom: 85px;
-            right: 40px;
-            background-color: #a7c9b1;
-            color: #fff;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 14px;
-            box-shadow: 0px 1px 1px #e0e0e0;
-            z-index: 100;
-        }
+        /* HTML: <div class="loader"></div> */
 
-        .fab-icon {
-            margin-top: 16px;
-        }
-        .bottom-section {
-            margin-bottom: -50px;
-        }
-        .bottom-title {
-            margin-bottom: -10px;
-        }
-        iframe, object, embed {
-            max-width: 100%;
-        } */
     </style>
 </head>
 
 <body>
+    <div class="containerLoader" hidden>
+        <div class="preloader"></div> 
+    </div>
     <a href="https://api.whatsapp.com/send?phone=083896009671" class="floating fab-icon" target="_blank">
         <img src="https://newconnected.com/assets/img/icon/wa.png" class="img-fluid" data-bs-toggle="tooltip" data-bs-placement="top" title="Contact US" alt="Contact Us, We Will Help You">
      </a>
     @include('includes.navbar')
     @yield('page-layouts')
     @include('includes.footer')
-    <div id="preloader"></div>
+    
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center bg-danger"><i class="bi bi-arrow-up-short"></i></a>
     <script>
+         $('.containerLoader').attr('hidden',false);
         $(document).ready(function() {
+            $('.containerLoader').attr('hidden',true);
             var owl = $('.owl-carousel');
             owl.owlCarousel({
                 items: 4,

@@ -59,7 +59,7 @@
 					<td><p>08999999</p></td>
 				</tr>
 				<tr>
-					<td><p><i class="fa-brands fa-whatsapp"></i> WhatsApp</p></td>
+					<td class="w-100"><p><i class="fa-brands fa-whatsapp"></i> WhatsApp</p></td>
 					<td><p class="px-2">:</p></td>
 					<td><p>08999999</p></td>
 				</tr>
