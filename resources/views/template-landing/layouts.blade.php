@@ -33,10 +33,6 @@
 
  <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-    <style>
-        /* HTML: <div class="loader"></div> */
-
-    </style>
 </head>
 
 <body>
@@ -51,7 +47,7 @@
     </div>
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center bg-danger"><i class="bi bi-arrow-up-short"></i></a>
     <script>
-         $('.containerLoader').attr('hidden',false);
+        $('.containerLoader').attr('hidden',false);
         $(document).ready(function() {
             $('.containerLoader').attr('hidden',true);
             var owl = $('.owl-carousel');
@@ -61,7 +57,7 @@
                 margin: 10,
                 autoplay: true,
                 autoplayTimeout: 3000,
-                autoplayHoverPause: true
+                autoplayHoverPause: true,
             });
             var owlkelas = $('.owl-kelas');
             owlkelas.owlCarousel({
@@ -70,7 +66,15 @@
                 margin: 10,
                 autoplay: true,
                 autoplayTimeout: 3000,
-                autoplayHoverPause: true
+                autoplayHoverPause: true,
+                responsive:{
+        0:{
+            items:2
+        },
+        768:{
+            items:4
+        }
+    }
             });
         })
     </script>

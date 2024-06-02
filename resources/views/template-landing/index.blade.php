@@ -259,8 +259,8 @@
                     <div class="large-12 columns">
                         <div class="owl-carousel owl-theme">
                             @foreach ($video as $vd)
-                            <div class="item w-100">
-                                <iframe 
+                            <div class="col-sm-2 item w-100">
+                                {{-- <iframe 
                                     width="300" height="215"
                                     src={{$vd->url}}
                                     title="YouTube video player" 
@@ -268,7 +268,7 @@
                                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                                     referrerpolicy="strict-origin-when-cross-origin" 
                                     allowfullscreen>
-                                </iframe>
+                                </iframe> --}}
                             </div>
                             @endforeach
                         </div>

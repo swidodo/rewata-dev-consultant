@@ -70,4 +70,10 @@ class LandingPageController extends Controller
         $data['blog-artikel']   = DB::table('untility')->where('key','blog')->first();
         return view('template-landing.blog-artikel',$data);
     }
+    public function show_detail_blog_artikel(){
+        $data['title']          ='blog dan artikel';
+        $data['blog']           = Artikel::where('id',10)->first();
+        $data['all_blog']       = Artikel::where('status','1')->get();
+        return view('template-landing.show-blog-artikel',$data);
+    }
 }

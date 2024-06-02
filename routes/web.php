@@ -29,6 +29,7 @@ Route::get('/page-layanan-perusahaan', [LandingPageController::class,'perusahaan
 Route::get('/show-layanan-perusahaan', [LandingPageController::class,'show_detail_perusahaan']);
 Route::get('/page-hubungi-kami', [LandingPageController::class,'hubungi_kami']);
 Route::get('/page-blog-artikel', [LandingPageController::class,'blog_artikel']);
+Route::get('/show-blog-artikel', [LandingPageController::class,'show_detail_blog_artikel']);
 Route::resource('layanan-perusahaan', LayananCompanyController::class);
 Route::post('remove-perusahaan', [LayananCompanyController::class,'destroy']);
 Route::get('service-perusahaan', [LayananCompanyController::class,'service']);
