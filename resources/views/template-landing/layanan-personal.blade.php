@@ -4,7 +4,7 @@
         <div class="p-section position-relative text-center" data-aos="zoom-in" data-aos-delay="100" style="margin-top: 50px;">
             <h2 class="text-dark">{!! 'KONSULTASI PERSONAL' !!}</h2>
             <div class="row">
-                <h3><strong>______GROW WITH US______</strong></h3>
+                <h3><strong>GROW WITH US</strong></h3>
             </div>            
         </div>
     </section>

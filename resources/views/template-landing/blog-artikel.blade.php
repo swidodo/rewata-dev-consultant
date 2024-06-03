@@ -24,7 +24,7 @@
                                 <div class="course-content">
                                     <h3><a href="#">{!! $artikel->title !!}</a></h3>
                                     {!! $artikel->short_description !!} 
-                                    <a href="/show-blog-artikel"><button class="btn btn-sm btn-outline-primary rounded-pill shadow-sm text-dark">selengkapnya</button></a>
+                                    <a href="/show-blog-artikel"><button class="btn btn-sm btn-outline-danger rounded-pill shadow-sm text-dark">selengkapnya</button></a>
                                 </div>
                             </div>
                         </div> 
