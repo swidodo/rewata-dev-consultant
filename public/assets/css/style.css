@@ -441,14 +441,21 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/zero_transparan.png") top center;
-  background-size: cover;
-  position: relative;
+  background: url("../img/hero-img.png") bottom right;
+  background-size: 450px 450px;
+  background-repeat: no-repeat;
+}
+
+#hero .gradasi{
+  height: 300px;
+  width: 300px;
+  color: red;
+  z-index: 10;
 }
 
 #hero:before {
-  content: "";
-  background: rgba(0, 0, 0, 0.4);
+  /* content: ""; */
+  /* background: rgba(0, 0, 0, 0.4); */
   position: absolute;
   bottom: 0;
   top: 0;
@@ -494,9 +501,10 @@ h6 {
   background:#ffffff;
   margin-top: 30px;
   color: #000000;
-  box-shadow: 3px 5px 6px 1px rgba(0,0,0,0.75);
--webkit-box-shadow: 3px 5px 6px 1px rgba(0,0,0,0.75);
--moz-box-shadow: 3px 5px 6px 1px rgba(0,0,0,0.75);
+  border: 3px solid #ebebeb;
+  box-shadow: 0px 1px 7px 4px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 1px 7px 4px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 1px 7px 4px rgba(0,0,0,0.75);
 }
 
 #hero .btn-get-started:hover {

@@ -1,9 +1,10 @@
 @extends('template-landing.layouts')
 @section('page-layouts')
+<div class="gradasi" style="z-index: 100; color:red"></div>
     <section id="hero" class="d-flex justify-content-start align-items-center">
-                <div class="p-section position-relative" data-aos="zoom-in" data-aos-delay="100">
-                <h1 style="margin-top:100px">{!! 'Layanan konsultasi dan pendampingan dari' !!}</h1>
-                <h1 style="margin-top:-10px; font-size: 38px;">{!! '<span style="font-weight: bolder; color:#FF0000">HR Consultant</span> berpengalaman' !!}</h1>
+        <div class="p-section position-relative" data-aos="zoom-in" data-aos-delay="100">
+                <h1 style="margin-top: 50px">{!! 'Layanan konsultasi dan pendampingan dari' !!}</h1>
+                <h1 style="margin-top:-15px; font-size: 38px;">{!! '<span style="font-weight: bolder; color:#FF0000">HR Consultant</span> berpengalaman' !!}</h1>
                 {{-- <h2>{!! 'Jasa Konsultasi Managemen HR, Sistem Managemen Mutu dan K3, HR Software <br />Bantuan Hukum dan Pendampingan khusus masalah ketenagakerjaan <br />dan Hubungan Industrial.' !!}</h2> --}}
                 <h2>{!! 'Konsultasi Managemen HR, Sistem Managemen Mutu, <br>Bantuan Hukum dan Pendampingan khusus masalah ketenagakerjaan <br>dan Hubungan Industrial.</br></br>Layanan HR Software' !!}</h2>
                 <a href="https://www.youtube.com/@budirewata" class="btn-get-started shadow-sm" target="_blank"><img class="img-fluid" width="35" src="{{asset('assets/img/mini-logo/youtube.png')}}" alt="play">&nbsp&nbspBudi Rewata</a>
