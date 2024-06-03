@@ -16,7 +16,21 @@ class HubungiController extends Controller
 
     public function create()
     {
-        //
+        try {
+            $data = [
+                'type_layanan'      => $request->type_layanan,
+                'nama_lengkap'      => $request->nama_lengkap,
+                'nama_perusahaan'   => $request->nama_perusahaan,
+                'no_telepon'        => $request->no_telpon,
+                'email'             => $request->email,
+                'alamat'            => $request->alamat_kantor,
+                'permasalahan'      => $request->permasalahan,
+            ];
+            Client::create($data);
+            return redirect('/kelas')->with('success','Kelas Rewata Tidak berhasil Dibuat.');
+        }catch(Exception $e){
+            return redirect()->back()->with('error','Kelas Rewata Tidak berhasil !');
+        }
     }
 
     public function store(Request $request)
