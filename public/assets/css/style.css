@@ -449,15 +449,15 @@ h6 {
 
 #hero .kotak {
   position: absolute;
-  top: 15%;
-  left: 83%; 
+  top: 20%;
+  left: 85%; 
   transform: translate(-50%, -50%); 
-  height: 1000px;
-  width: 1000px;
+  height: 750px;
+  width: 750px;
   background: #FF0000;
   z-index: -1; 
   border-radius: 100%;
-  filter: blur(250px);
+  filter: blur(200px);
 }
 
 #hero .container {
