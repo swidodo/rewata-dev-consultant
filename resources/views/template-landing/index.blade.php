@@ -1,14 +1,15 @@
 @extends('template-landing.layouts')
 @section('page-layouts')
-<div class="gradasi" style="z-index: 100; color:red"></div>
     <section id="hero" class="d-flex justify-content-start align-items-center">
-        <div class="p-section position-relative" data-aos="zoom-in" data-aos-delay="100">
+        <div class="kotak"></div>
+        <div class="container">
+            <div class="p-section position-relative" data-aos="zoom-in" data-aos-delay="100">
                 <h1 style="margin-top: 50px">{!! 'Layanan konsultasi dan pendampingan dari' !!}</h1>
                 <h1 style="margin-top:-15px; font-size: 38px;">{!! '<span style="font-weight: bolder; color:#FF0000">HR Consultant</span> berpengalaman' !!}</h1>
-                {{-- <h2>{!! 'Jasa Konsultasi Managemen HR, Sistem Managemen Mutu dan K3, HR Software <br />Bantuan Hukum dan Pendampingan khusus masalah ketenagakerjaan <br />dan Hubungan Industrial.' !!}</h2> --}}
-                <h2>{!! 'Konsultasi Managemen HR, Sistem Managemen Mutu, <br>Bantuan Hukum dan Pendampingan khusus masalah ketenagakerjaan <br>dan Hubungan Industrial.</br></br>Layanan HR Software' !!}</h2>
+                <h2>{!! 'Konsultasi Managemen HR, Sistem Managemen Mutu, <br>Bantuan Hukum dan Pendampingan khusus masalah ketenagakerjaan <br>dan Hubungan Industrial.</br></br>> Layanan HR Software' !!}</h2>
                 <a href="https://www.youtube.com/@budirewata" class="btn-get-started shadow-sm" target="_blank"><img class="img-fluid" width="35" src="{{asset('assets/img/mini-logo/youtube.png')}}" alt="play">&nbsp&nbspBudi Rewata</a>
-                </div>
+            </div>
+        </div>
     </section>
     <main id="main">
         {{-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#007bff" fill-opacity="1" d="M0,96L26.7,90.7C53.3,85,107,75,160,85.3C213.3,96,267,128,320,154.7C373.3,181,427,203,480,197.3C533.3,192,587,160,640,160C693.3,160,747,192,800,192C853.3,192,907,160,960,154.7C1013.3,149,1067,171,1120,186.7C1173.3,203,1227,213,1280,213.3C1333.3,213,1387,203,1413,197.3L1440,192L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"></path></svg> --}}
